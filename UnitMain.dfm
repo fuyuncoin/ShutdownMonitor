@@ -1,0 +1,37 @@
+object Form1: TForm1
+  Left = 663
+  Top = 265
+  Width = 278
+  Height = 188
+  Caption = #20851#38381#26174#31034#22120#23631#24149'[http://fuyuncoin.github.io]'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 88
+    Top = 64
+    Width = 81
+    Height = 41
+    Caption = #20851#38381#23631#24149
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Left = 8
+    Top = 8
+    Width = 361
+    Height = 21
+    TabOrder = 1
+    Text = 
+      'powershell (Add-Type '#39'[DllImport(\"user32.dll\")]^public static ' +
+      'extern int PostMessage(int hWnd, int hMsg, int wParam, int lPara' +
+      'm);'#39' -Name a -Pas)::PostMessage(-1,0x0112,0xF170,2)'
+    Visible = False
+  end
+end
